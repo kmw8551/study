@@ -25,6 +25,8 @@ study (repo)
 
 
 해당 Repository에 관련하여 운영인원은 3명  
+README.md 내용 추가시, 다음의 문법 규칙을 참고 할 것. [링크](https://www.markdownguide.org/basic-syntax/)  
+
 
 ---
 
@@ -73,7 +75,11 @@ WHERE emp.salary >  5000
 
 Master Branch 에 대한 접근 권한은 한명으로 제한하여 Master Code가 변경되거나 복구 불가능한 일이 없도록 진행하려고 함.  
 따라서 모든 인원은 개발 간, 개인 Branch에서 코드 수정 후, Master에 반영하는 형태로 진행.  
-   
+
+*Git Conflict 발생 시, 나머지 2인에게 공지하고 상황 설명 후, Merge/Rebase 작업 할 것.*
+
+[Git 작업에 유용한 툴](https://www.sourcetreeapp.com/)  
+
 
 ---
    
