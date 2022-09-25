@@ -1,6 +1,6 @@
 package oracle.io;
 
-import oracle.datastruct.block.Block;
+import oracle.datastruct.physical.block.Block;
 
 /**
  *
