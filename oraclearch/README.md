@@ -8,7 +8,7 @@
 
 ---
 
-## 진행상황
+## 진행상황 ( 리뷰완료 기준 체크 )
 - [ ] 오라클 성능고도화 원리와 해법 1 읽기 
 
   - [X] 1장 오라클 아키텍처
@@ -33,7 +33,7 @@
 | 구분 | 제목 | 정리 링크 |
 | ----- | ----- | ----- |
 | 1장 | 오라클 아키텍처 | [1편][1장_1편], [2편][1장_2편] |
-| 2장 | 트랜잭션과 Lock | |
+| 2장 | 트랜잭션과 Lock | [1편][2장_1편] |
 | 3장 | 오라클 성능 관리 | |
 | 4장 | 라이브러리 캐시 최적화 원리 | |
 | 5장 | 데이터베이스 Call 최소화 원리 | |
@@ -64,3 +64,4 @@
    [친절한SQL]: <https://github.com/t0e8r1r4y/SQLP_STUDY/wiki>
    [1장_1편]: <https://github.com/kmw8551/study/blob/main/oraclearch/src/main/java/oracle/20220925_1%EC%9E%A5.md>
    [1장_2편]: <https://github.com/kmw8551/study/blob/main/oraclearch/src/main/java/oracle/221004_study.md>
+   [2장_1편]: <https://github.com/kmw8551/study/blob/main/oraclearch/src/main/java/oracle/221013_2%EC%9E%A5.md>
