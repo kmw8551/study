@@ -159,16 +159,23 @@
 
 ## 9️⃣ Static  vs Dynamic SQL
 
+> 필자가 하고싶은 이야기는 결국 바인드 변수의 사용여부를 가지고 static과 dynamic을 구분하지 말자다.  
+
+
 #### Static SQL
 - String 형 변수에 담지 않고 코드 사이에 직접 기술한 SQL문을 말한다. ( = Embedded SQL )
+- PreCompiler가 ProCompile 과정에서 static SQL을 발견하면 이를 SQL 런타임 라이브러리에 포함된 함수를 호출하는 코드로 변환한다.
+- 이 과정에서 결국 String형 변수에 담긴다.
+- PreCompile 단계에서 구문 분석, 유효 오브젝트 여부, 오브젝트 엑세스 권한 등을 체크하는 것이 가능
 
 
 #### Dynamic SQL
 - String 형 변수에 담아서 기술하는 SQL
 - String 변수를 사용함으로 조건에 따라 SQL문을 동적으로 바꿀 수 있고, 런타임 시에 사용자로 부터 SQL문의 일부 또는 전부를 입력받아서 실행이 가능함.
+- PreCompiler는 Dynamic SQL을 만나면 그대로 통과 시킨다. syntax 체크가 안된다.
 
 #### 문제의 본질은 바인드 변수 사용 여부
-- static, dynamic 모두 DB 입장에서는 차이가 없다.
+- static, dynamic 모두 DB 입장에서는 차이가 없다. (String 형태의 SQL을 받기 때문에~~~)
 - 성능 이슈는 바인드 변수를 사용하지 않았을 때 발생한다는 것!
 
 <br>
@@ -180,7 +187,7 @@
 <br>
 
 
-## Static SQL 구현을 위한 기법들
+## 🔟+1️⃣ Static SQL 구현을 위한 기법들
 
 
 <br>
