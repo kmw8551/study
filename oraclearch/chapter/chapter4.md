@@ -159,6 +159,17 @@
 
 ## 9️⃣ Static  vs Dynamic SQL
 
+#### Static SQL
+- String 형 변수에 담지 않고 코드 사이에 직접 기술한 SQL문을 말한다. ( = Embedded SQL )
+
+
+#### Dynamic SQL
+- String 형 변수에 담아서 기술하는 SQL
+- String 변수를 사용함으로 조건에 따라 SQL문을 동적으로 바꿀 수 있고, 런타임 시에 사용자로 부터 SQL문의 일부 또는 전부를 입력받아서 실행이 가능함.
+
+#### 문제의 본질은 바인드 변수 사용 여부
+- static, dynamic 모두 DB 입장에서는 차이가 없다.
+- 성능 이슈는 바인드 변수를 사용하지 않았을 때 발생한다는 것!
 
 <br>
 
